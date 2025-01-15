@@ -71,19 +71,19 @@ class HomePage extends StatelessWidget{
                             topRight: Radius.circular(60))
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(20),
+                        padding: EdgeInsets.all(30),
                         child: Column(
                           children: <Widget>[
-                            SizedBox(height: 60,),
+                            SizedBox(height: 55,),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: [BoxShadow(
-                                  color: Color.fromRGBO(63, 81, 181, 1),
+                                  color: Color.fromRGBO(63, 81, 181, 0.7),
                                   blurRadius: 20,
                                   offset: Offset(0, 10),
-                                ),]
+                                ),],
                               ),
 
                               child: Column(
@@ -132,6 +132,32 @@ class HomePage extends StatelessWidget{
                                 ],
                               ),
                             ),
+
+                            SizedBox(height: 40,),
+                            Text(
+                              "Forgot Password?",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20),),
+                            SizedBox(height: 40,),
+                            Container(
+                              height: 50,
+                              margin: EdgeInsets.symmetric(horizontal: 50),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50),
+                                color: Colors.cyanAccent,
+                              ),
+                              child: Center(
+                                child: Text("Login",
+                                style: TextStyle(
+                                  color: Colors.indigo,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),)
+                              )
+                            ),
+
+                            Sized
                           ],
                         ),
                       ),
