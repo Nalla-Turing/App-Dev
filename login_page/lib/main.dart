@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget{
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(20),
                                 boxShadow: [BoxShadow(
                                   color: Color.fromRGBO(63, 81, 181, 0.7),
                                   blurRadius: 20,
@@ -139,33 +139,74 @@ class HomePage extends StatelessWidget{
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20),),
-                            SizedBox(height: 40,),
+                            SizedBox(height: 10,),
                             Container(
                               height: 50,
                               margin: EdgeInsets.symmetric(horizontal: 50),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Colors.cyanAccent,
-                              ),
+                                gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    colors: [
+                                      Color(0xFF5C6BC0),
+                                      Colors.indigo,
+                                      Color(0xFF3949AB),
+                                      Color(0xFF303F9F),
+                                    ]),),
+
+
                               child: Center(
                                 child: Text("Login",
                                 style: TextStyle(
-                                  color: Colors.indigo,
+                                  color: Colors.white,
                                   fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),)
+                                  fontWeight: FontWeight.bold,),)
                               )
                             ),
 
-                            Sized
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-                ),
-            ),
+                            SizedBox(height: 40,),
+
+                            SizedBox(height: 20,),
+
+                            Row(  // Center the button horizontally
+                              children: <Widget>[
+                                Container(
+                                  height: 50,
+                                  width: 220,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Color(0xFFEF5350),  // Deep red
+                                        Color(0xFFFF6E40),  // Vibrant orange-red
+                                        Color(0xFFC62828),  // Darker red
+                                      ],
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.2),
+                                        blurRadius: 10,
+                                        offset: Offset(0, 5),
+                                      ),
+                                    ],
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Login as an ACM Member",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                  ),),
+                              ],),
+
+                          ],),
+                      ),),
+                  ),],
+                ),),
           );
   }
 }
