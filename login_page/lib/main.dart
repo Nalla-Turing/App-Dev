@@ -50,6 +50,7 @@ class HomePage extends StatelessWidget{
                     ),
                   ),
 
+                  SizedBox(height: 30,),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
@@ -57,12 +58,33 @@ class HomePage extends StatelessWidget{
                             begin: Alignment.bottomCenter,
                             end: Alignment.topCenter,
                             colors: [
-                              Colors.indigoAccent, // Indigo accent
-                              Colors.blueAccent,   // Blue accent
-                              Colors.blue,         // Blue
-                              Colors.cyan,         // Cyan at the top
-                              Colors.cyanAccent,
+                              Colors.indigoAccent,
+                              Colors.blueAccent,
+                              Colors.cyan,
+                              Color(0xFF4DD0E1),
+                              Color(0xFF80DEEA),
+                              Color(0xFFB2EBF2),
                             ]
+                        ),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(60),
+                            topRight: Radius.circular(60))
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius
+                                boxShadow: [BoxShadow(
+                                  color: Color.fromRGBO(225, 95, 27, 3)
+                                ),]
+                              )
+                            ),
+                          ],
                         ),
                       ),
                     ),
