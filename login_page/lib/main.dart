@@ -42,9 +42,9 @@ class HomePage extends StatelessWidget{
                       ),
                         SizedBox(height:30),
                         Text(
-                          "Welcome Back soldier",
+                          "Welcome Back Nerd",
                           style: TextStyle(color: Colors.white,
-                              fontSize: 20),
+                              fontSize: 25),
                         ),
                       ],
                     ),
@@ -74,15 +74,63 @@ class HomePage extends StatelessWidget{
                         padding: EdgeInsets.all(20),
                         child: Column(
                           children: <Widget>[
+                            SizedBox(height: 60,),
                             Container(
-                              padding: EdgeInsets.all(20),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius
+                                borderRadius: BorderRadius.circular(10),
                                 boxShadow: [BoxShadow(
-                                  color: Color.fromRGBO(225, 95, 27, 3)
+                                  color: Color.fromRGBO(63, 81, 181, 1),
+                                  blurRadius: 20,
+                                  offset: Offset(0, 10),
                                 ),]
-                              )
+                              ),
+
+                              child: Column(
+                                children: <Widget>[
+                                  Container(
+                                    padding:EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      border: Border(
+                                        bottom: BorderSide(
+                                          color: Colors.grey[200]!,
+                                        ),
+                                      ),
+                                    ),
+
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        hintText: "Email or phone number",
+                                        hintStyle: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                        border: InputBorder.none
+                                      ),
+                                    ),
+                                  ),
+
+                                  Container(
+                                    padding:EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      border: Border(
+                                        bottom: BorderSide(
+                                          color: Colors.grey[200]!,
+                                        ),
+                                      ),
+                                    ),
+
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                          hintText: "Password",
+                                          hintStyle: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                          border: InputBorder.none
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
